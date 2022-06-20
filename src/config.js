@@ -5,9 +5,10 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "LIFF - Near Protocol Collection";
+const description = "Test collection with Squid game theme";
+// const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +25,11 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Symbol" },
+      { name: "Number" },
     ],
   },
 ];
@@ -42,8 +39,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 300,
+  height: 300,
   smoothing: false,
 };
 
@@ -68,7 +65,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 2 / 128,
+  ratio: 30 / 300,
 };
 
 const background = {
